@@ -10,7 +10,7 @@ const Navbar = () => {
         <img src="./images/logo.svg" alt="" />
       </span>
       <div className={`nav-items ${isOpen && "open"}`} data-testid="nav-items"> 
-        <a href="/home">Home</a>
+        <a href="#landing-page">Home</a>
         <a href="#about-me">About</a>
         <a href="#my-skills">Skills </a>
         <a href="#my-projects">Projects</a>

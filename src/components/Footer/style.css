@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
 
 .footer-container {
-    background-image: linear-gradient(#7a8996dc, #041523dc);
+    background-image: 
+    linear-gradient(#7a8996dc, #041523dc),
+    url('/public/background-image-one.png');
     color: white;
     padding: 3em;
     display: flex;
