@@ -12,13 +12,13 @@ function Footer() {
         <br/>
         <div className="footer-icons" id="footer-icons">
             <br />
-
             <br />
-            <div className="CONTACT ME" id="footer-contact">
+
+            <div className="footer-contact" id="footer-contact">
                 <span>CONTACT ME</span>
                 <ul>
                     <li className='c-li'>florencenyokabiwangui@gmail.com</li>
-                    <div className='iconz'>
+                    <div className='icons'>
                         <IoLogoInstagram className='icon' data-testid="instagram-icon" />
                         <IoLogoLinkedin className='icon' data-testid="linkedin-icon" />
                         <FaGithub className='icon' data-testid="Github-icon"/>
@@ -26,16 +26,19 @@ function Footer() {
                     </div>
                 </ul>
             </div>
-        </div>
-        <br />
-        <div className="f-down">
 
         </div>
+
+        <br />
+
         <hr className="footer-hr" />
+
         <div className="footer-p">
             <p>&copy; 2024 Florence Nyokabi Wangui</p>
         </div>
+
     </div>
-    );
+    
+);
 }
 export default Footer;

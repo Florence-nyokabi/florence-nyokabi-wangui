@@ -68,7 +68,7 @@
     top: 6.5em;
     display: flex;
     flex-direction: column;
-    background: #008CBF;
+    background: linear-gradient(#7a8996dc, #041523dc);
     left: 0;
     width: 100%;
     padding-left: 10px;
