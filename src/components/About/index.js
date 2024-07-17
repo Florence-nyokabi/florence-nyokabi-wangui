@@ -5,17 +5,19 @@ import { MdOutlineFileDownload } from "react-icons/md";
 function About() {
     return(
     <div className="about" id="about-section">
+        <br/>
         <div className="home-divs">
             <div className="home-div-one">
                 <span className="span-dot"></span>
-                {/* <h1 className="welcome">Hi, there! I am </h1> */}
-                <h1 className="name"> Florence Nyokabi Wangui</h1>
-                <h1 className="journey">
+                {/* <br/> */}
+                <h1 className="name"> Florence Wangui</h1>
+                <br/>
+                <h1 className="title">
                     Software Engineer & 
                     <br/>
-                    Quality Assurance Expert
+                    QA Expert
                 </h1>
-                <p className="our-app">
+                <p className="about-me">
                 While I may be at the beginning of my journey, my enthusiasm for backend and 
                 Android development knows no bounds. I thrive on the excitement of learning 
                 and implementing the latest trends and technologies to craft seamless user experiences.

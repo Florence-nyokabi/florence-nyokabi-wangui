@@ -9,7 +9,7 @@
     url('/public/images/background-image-one.png');
     height: 100%;
     background-size: cover;
-    padding: 5em 0;
+    padding: 15em 0;
 }
 .home-divs{
     display: grid;
@@ -29,7 +29,7 @@
     text-transform: capitalize;
     color: #484848;
 }
-.home-div-one .journey{
+.home-div-one .title{
     color: #008CBF;
     font-size: 50px;
     font-weight: bolder;
@@ -87,6 +87,7 @@
     width: 550px;
     background-size: cover;
     margin-top: -3.5em;
+    border-radius: 85em;
 }
 .span-dot{
     background-color: #FFDB5B;

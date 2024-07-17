@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <span className="logo">
-      <img src="./logo.svg" alt="" />
+      <img src="./images/logo.jpg" alt="" />
       </span>
       <div className={`nav-items ${isOpen && "open"}`} data-testid="nav-items"> 
         <a href="#about-section">About</a>
