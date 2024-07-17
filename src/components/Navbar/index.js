@@ -7,11 +7,10 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <span className="logo">
-        <img src="./images/logo.svg" alt="" />
+      <img src="./logo.svg" alt="" />
       </span>
       <div className={`nav-items ${isOpen && "open"}`} data-testid="nav-items"> 
-        <a href="#landing-page">Home</a>
-        <a href="#about-me">About</a>
+        <a href="#about-section">About</a>
         <a href="#my-skills">Skills </a>
         <a href="#my-projects">Projects</a>
         <a href="#footer-container">Contact</a>

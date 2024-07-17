@@ -6,7 +6,7 @@
 .landing-page{
     background-image:
     linear-gradient(rgba(255, 255, 255, 0.700), rgba(255, 255, 255, 0.700)),
-    url('/public/background-image-one.png');
+    url('/public/images/background-image-one.png');
     height: 100%;
     background-size: cover;
     padding: 5em 0;
@@ -38,6 +38,24 @@
     text-transform: capitalize;
     margin-top: -.35em;
 }
+
+.resume-button button{
+    background-color: #008CBF; 
+    border: none; 
+    color: white;
+    font-family: Jost;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s;
+}
+
+
 .home-divs p{
     font-size: 20px;
     font-family: Jost;
@@ -45,13 +63,13 @@
     padding-top: 1.7em;
     letter-spacing: .02em;
 }
-.images-div-one{
+/* .images-div-one{
     margin-top: -2em;
     margin-left: -.5em;
 }
 .images-div-one img{
     width: 13em;
-}
+} */
 .home-div-two{
     margin-top: 8%;
     text-align: center !important;
@@ -64,7 +82,7 @@
 .child-background{
     position: relative;
     background-image:
-    url('/public/landing-page-image.jpg');
+    url('/public/images/landing-page-image.jpg');
     height: 550px;
     width: 550px;
     background-size: cover;

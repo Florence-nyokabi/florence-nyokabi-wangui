@@ -1,6 +1,6 @@
 import Layout from './components/Layout';
 import './App.css';
-import LandingPage from './components/LandingPage';
+import About from './components/About';
 
 
 
@@ -8,7 +8,7 @@ function App() {
   return(
     <div>
       <Layout>
-       <LandingPage/>
+       <About/>
       </Layout>
       
     </div>
