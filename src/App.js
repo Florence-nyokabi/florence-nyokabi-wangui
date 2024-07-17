@@ -1,5 +1,7 @@
 import Layout from './components/Layout';
 import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 import './App.css';
 
 function App() {
@@ -7,8 +9,9 @@ function App() {
   <div>
     <Layout>
       <About/>
-    </Layout>
-      
+      <Skills/>
+      <Projects/>
+    </Layout>  
   </div>
 );
 }
