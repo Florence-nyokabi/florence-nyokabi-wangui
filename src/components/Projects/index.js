@@ -17,6 +17,18 @@ let projects = [
         {   image: <img src="./images/billiz.jpg" alt="" />,
             title:"Billiz",
             description:"Our app simplifies assignment tracking and provides information on nearby shops where you can find the necessary materials for your child's studies. "
+        },
+        {   image: <img src="./images/billiz.jpg" alt="" />,
+            title:"Billiz",
+            description:"Our app simplifies assignment tracking and provides information on nearby shops where you can find the necessary materials for your child's studies. "
+        },
+        {   image: <img src="./images/billiz.jpg" alt="" />,
+            title:"Billiz",
+            description:"Our app simplifies assignment tracking and provides information on nearby shops where you can find the necessary materials for your child's studies. "
+        },
+        {   image: <img src="./images/billiz.jpg" alt="" />,
+            title:"Billiz",
+            description:"Our app simplifies assignment tracking and provides information on nearby shops where you can find the necessary materials for your child's studies. "
         }
 ]
 function Projects (){
@@ -26,6 +38,7 @@ function Projects (){
                 <h1 className="main-heading">Recent Projects</h1>
                 <hr/>
             </div>
+            <br/>
             <div id="projects-content">
                 {
                     projects.map((item,index)=>(

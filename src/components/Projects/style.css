@@ -1,47 +1,71 @@
-.projects{
+.projects {
     width: 100%;
     font-family: 'Baloo Bhai 2', cursive;
     margin-top: 7em;
-    margin-bottom: 10em;
+    /* margin-bottom: 10em; */
+}
+.icons a {
+    color: inherit; /* Inherit the color from the parent */
+    text-decoration: none; /* Remove underline */
 }
 
-.projects h1{
+.icons a:hover {
+    color: #008CBF; /* Change to your desired hover color */
+}
+
+.icon {
+    font-size: 24px; /* Adjust size as needed */
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.projects h1 {
     width: 100%;
     text-align: center;
 }
 
-.projects-header hr{
+.projects-header hr {
     width: 200px;
     height: 5px;
     border-radius: 4px;
     background: #008CBF;
-    margin-right: 40em;
+    margin: 0 auto;
     margin-top: -20px;
 }
 
-.projects-content{
+#projects-content {
     width: 100%;
-    margin-bottom: 8%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     justify-content: center;
-}
-.projects-content img{
-    width: 30%;
-    height: 30%;
+    margin-bottom: 8%;
 }
 
-#projectsContainer{
+#projectsContainer {
     margin: 2%;
     color: black;
     padding: 50px 25px;
-    padding-bottom: 40px;
-    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-#projectsContainer p{
-    font-family:'Jost',san ;
+#projectsContainer img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+#projectsContainer h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#projectsContainer p {
+    font-family: 'Jost', sans-serif;
     line-height: 1.8;
     color: #484848;
     padding-bottom: 3em;

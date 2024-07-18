@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Hind+Madurai&family=Nunito:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Hind+Madurai&family=Jost&family=Nunito:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
 .Navbar {
   /* margin-top: 1.5em; */
   margin-bottom: 1.5em;
@@ -31,7 +33,8 @@
 .Navbar > .nav-items > a {
   font-weight: 400;
   color: #484848;
-  font-family: 'Amiko', sans-serif;
+  /* font-family: 'Amiko', sans-serif; */
+  font-family: "Jost", serif;
   font-size: 1.25em;
   text-decoration: none;
   margin: 35px 1.4em;

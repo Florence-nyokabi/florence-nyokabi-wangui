@@ -6,6 +6,7 @@ function About() {
     return(
     <div className="about" id="about-section">
         <br/>
+        <br/>
         <div className="home-divs">
             <div className="home-div-one">
                 <span className="span-dot"></span>
@@ -36,7 +37,8 @@ function About() {
                 <span className="span-dot-two"></span>
             </div>
         </div>
-        
+        <br/>
+        <br/>
     </div>
 );
     

@@ -16,7 +16,16 @@ let info = [
     {   icons:< MdDeveloperMode/>,
         title:"Mobile Development",
         content:"Engage parents as active partners in their child's education journey. With our app, parents can access assignments, track progress, and discover nearby shops for required materials, nurturing a supportive learning environment."
-    }
+    },
+    {   icons:< MdDeveloperMode/>,
+        title:"Mobile Development",
+        content:"Engage parents as active partners in their child's education journey. With our app, parents can access assignments, track progress, and discover nearby shops for required materials, nurturing a supportive learning environment."
+    },
+    {   icons:< MdDeveloperMode/>,
+        title:"Mobile Development",
+        content:"Engage parents as active partners in their child's education journey. With our app, parents can access assignments, track progress, and discover nearby shops for required materials, nurturing a supportive learning environment."
+    },
+    
     
 ]
 function Skills(){
