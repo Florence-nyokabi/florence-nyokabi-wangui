@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 
 .Navbar {
-  /* margin-top: 1.5em; */
   margin-bottom: 1.5em;
   height: 60px;
   display: flex;
@@ -19,21 +18,24 @@
   color: white; /* Text color */
   text-align: center; /* Center the text */
 }
+
 .logo {
   display: flex;
   align-items: center;
-  margin:4%;
+  margin-left: 20px; /* Adjusted for spacing on the left side */
 }
-.logo img{
-  width: 1em;
+
+.logo img {
+  width: 50px; /* Adjust size as needed */
 }
-.nav-items{
-  margin-right: 3.3em;
+
+.nav-items {
+  margin-right: 70px; /* Space for hamburger menu */
 }
+
 .Navbar > .nav-items > a {
   font-weight: 400;
   color: #484848;
-  /* font-family: 'Amiko', sans-serif; */
   font-family: "Jost", serif;
   font-size: 1.25em;
   text-decoration: none;
@@ -41,11 +43,13 @@
   position: relative;
   opacity: 0.9;
 }
+
 .Navbar > .nav-items > a:hover {
   opacity: 1;
   color: #008CBF;
   font-weight: bold;
 }
+
 .Navbar > .nav-items > a::before {
   content: "";
   position: absolute;
@@ -53,39 +57,90 @@
   bottom: -.8em;
   width: 0;
   height: 3px;
-  background:  #008CBF;;
-  transition: all 0.45s ;
+  background: #008CBF;
+  transition: all 0.45s;
   border-radius: .6em;
 }
+
 .Navbar > .nav-items > a:hover::before {
   width: 50%;
 }
+
 .Navbar > .nav-toggle {
   display: none;
+  cursor: pointer;
+  margin-right: 20px; /* Space from right edge */
+  padding: 10px; /* Increases clickable area */
 }
+
+.Navbar > .nav-toggle > .bar {
+  position: relative;
+  width: 30px; /* Adjust width as needed */
+  height: 2px; /* Adjust height as needed */
+  background: #008CBF;
+  transition: all 0.45s ease-in-out;
+}
+
+.Navbar > .nav-toggle > .bar::before,
+.Navbar > .nav-toggle > .bar::after {
+  content: "";
+  position: absolute;
+  height: 2px; /* Ensure all bars have the same height */
+  background: #008CBF;
+  border-radius: 2px;
+  transition: all 0.45s ease-in-out;
+}
+
+.Navbar > .nav-toggle > .bar::before {
+  width: 30px; /* Match width with .bar */
+  top: -8px; /* Adjust spacing from the main bar */
+}
+
+.Navbar > .nav-toggle > .bar::after {
+  width: 30px; /* Match width with .bar */
+  top: 8px; /* Adjust spacing from the main bar */
+}
+
+.Navbar > .nav-toggle.open > .bar {
+  transform: translateX(-40px);
+  background: transparent;
+}
+
+.Navbar > .nav-toggle.open > .bar::before {
+  width: 30px;
+  transform: rotate(45deg) translate(6px, -6px); /* Adjust positioning for cross */
+}
+
+.Navbar > .nav-toggle.open > .bar::after {
+  transform: rotate(-45deg) translate(6px, 6px); /* Adjust positioning for cross */
+}
+
 @media (max-width: 700px) {
   .Navbar > .nav-items > a:hover {
     color: #fff;
   }
+
   .Navbar > .nav-items > a::before {
-    background:  #fff;
+    background: #fff;
   }
+
   .logo {
-    margin:3%;
+    margin-left: 10px; /* Adjust as needed */
   }
+
   .Navbar > .nav-items {
     position: absolute;
-    top: 6.5em;
+    top: 60px; /* Space below the navbar */
     display: flex;
     flex-direction: column;
     background: linear-gradient(#7a8996dc, #041523dc);
     left: 0;
     width: 100%;
     padding-left: 10px;
-    height: 100%;
+    height: calc(100vh - 60px); /* Full height minus navbar height */
     transform: translateX(-100%);
-  
   }
+
   .Navbar > .nav-items > a {
     color: white;
     font-family: Amiko;
@@ -95,107 +150,110 @@
     padding: 3px;
     position: relative;
   }
+
   .Navbar > .nav-items > a::before {
-      background: transparent;
+    background: transparent;
   }
+
   .Navbar > .nav-items.open {
-      transform: translateX(0);
+    transform: translateX(0);
   }
+
   .Navbar > .nav-toggle {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    margin-right: 20px; /* Ensure it’s not too far to the edge */
+    padding: 10px; /* Increases clickable area */
   }
+
   .nav-toggle > .bar {
     position: relative;
-    width: 32px;
-    height: 2px;
-    background: #008CBF;;
+    width: 30px; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
+    background: #008CBF;
     transition: all 0.45s ease-in-out;
   }
+
   .nav-toggle > .bar::before,
   .nav-toggle > .bar::after {
     content: "";
     position: absolute;
-    height: 2px;
-    background:#008CBF;;
+    height: 2px; /* Ensure all bars have the same height */
+    background: #008CBF;
     border-radius: 2px;
     transition: all 0.45s ease-in-out;
   }
+
   .nav-toggle > .bar::before {
-    width: 32px;
-    transform: translateY(-8px);
-    right: 0;
+    width: 30px; /* Match width with .bar */
+    top: -8px; /* Adjust spacing from the main bar */
   }
+
   .nav-toggle > .bar::after {
-    width: 32px;
-    transform: translateY(8px);
+    width: 30px; /* Match width with .bar */
+    top: 8px; /* Adjust spacing from the main bar */
   }
+
   .nav-toggle.open > .bar {
-      transform: translateX(-40px);
-      background: transparent;
+    transform: translateX(-40px);
+    background: transparent;
   }
+
   .nav-toggle.open > .bar::before {
-      width: 32px;
-      transform: rotate(45deg) translate(26px, -26px);
+    width: 30px;
+    transform: rotate(45deg) translate(6px, -6px); /* Adjust positioning for cross */
   }
+
   .nav-toggle.open > .bar::after {
-    transform: rotate(-45deg) translate(26px, 26px);
+    transform: rotate(-45deg) translate(6px, 6px); /* Adjust positioning for cross */
   }
 }
-@media (max-width: 844px){
-  .nav-items{
+
+@media (max-width: 844px) {
+  .nav-items {
     margin-right: 1em;
   }
 }
 
 @media (min-width: 769px) and (max-width: 820px) {
   .Navbar > .nav-items > a {
-    font-size: 20px; 
-    margin: 8px; 
-    padding: 8px; 
-   
-   
-
+    font-size: 20px;
+    margin: 8px;
+    padding: 8px;
   }
-  
-  
 }
 
 @media (min-width: 912px) and (max-width: 1368px) {
   .Navbar > .nav-items > a {
-    font-size: 30px; 
-    margin: 8px; 
-    padding: 8px; 
+    font-size: 30px;
+    margin: 8px;
+    padding: 8px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .Navbar > .nav-items > a {
-
-    font-size: 18px; 
-    margin: 8px; 
-    padding-left:35px;
-    padding: 8px; 
-    margin-left:2%;
+    font-size: 18px;
+    margin: 8px;
+    padding-left: 35px;
+    padding: 8px;
+    margin-left: 2%;
   }
-
 }
+
 @media (min-width: 820px) and (max-width: 1180px) {
   .Navbar > .nav-items > a {
-
-    font-size: 18px; 
-    margin: 8px; 
-    padding: 8px; 
+    font-size: 18px;
+    margin: 8px;
+    padding: 8px;
   }
-
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
- .logo{
-  margin-left: 3%;
- }
+  .logo {
+    margin-left: 3%;
+  }
 }
